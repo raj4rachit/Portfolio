@@ -254,9 +254,9 @@
                     <h2>Projects</h2>
                 </div>
                 <div>
-                    <div 
-                        id="react-project-root" 
-                        data-accentcolor="{{$accentColor}}" 
+                    <div
+                        id="react-project-root"
+                        data-accentcolor="{{$accentColor}}"
                         data-demomode="{{$demoMode}}"
                     />
                     <div class="mb-5"></div>
@@ -380,7 +380,6 @@
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: [license-url] -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
         </div>
     </footer><!-- End Footer -->
@@ -393,7 +392,6 @@
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: [license-url] -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
         </div>
     </footer><!-- End Footer -->
@@ -421,7 +419,7 @@
     <script>
         $(function() {
             $('.lazy').lazy();
-            
+
             @if($about->taglines)
                 if ($('.typed').length) {
                     new Typed('.typed', {
@@ -494,7 +492,7 @@
                     });
                 }
             });
-            
+
             function showNotification(message = 'Something went wrong', type = 'error', sticky = false) {
                 iziToast.show({
                     title: '',
@@ -509,7 +507,7 @@
                     messageColor: type === 'success' ? '#00ffb8' : '#ffafb4',
                     icon: type === 'success' ? 'fas fa-check' : 'fas fa-times-circle'
                 });
-            }    
+            }
         });
     </script>
     @if (!empty($portfolioConfig['script']['footer']) && $portfolioConfig['script']['footer'] != '')
