@@ -22,7 +22,7 @@
             {!!$portfolioConfig['script']['header']!!}
         </script>
     @endif
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:title" content="{{$portfolioConfig['seo']['title']}}"/>
@@ -63,7 +63,7 @@
             border-color: rgba({{$accentColorRGB}}, .5) !important;
             box-shadow: none;
         }
-        
+
         .border-primary {
             border-color: var(--z-accent-color) !important;
         }
@@ -360,9 +360,9 @@
                     <h2 class="mb-4">Projects</h2>
                 </div>
             </div>
-            <div 
-                id="react-project-root" 
-                data-accentcolor="{{$accentColor}}" 
+            <div
+                id="react-project-root"
+                data-accentcolor="{{$accentColor}}"
                 data-demomode="{{$demoMode}}"
             />
             <div class="mb-5"></div>
@@ -378,7 +378,7 @@
                     <h2 class="mb-4">Contact Me</h2>
                 </div>
             </div>
-    
+
             <div class="row no-gutters block-9">
                 <div class="col-md-6 order-md-last d-flex">
                     <form action="#" method="POST" id="contact-me-form" class="bg-light p-4 p-md-5 contact-form" >
@@ -443,17 +443,11 @@
         <div class="h4 title text-center text-muted">{{$about->name}}</div>
         <div class="text-center text-muted"><p>©{{ now()->year }} All rights reserved.</p></div>
         <div class="text-center text-muted">
-            <small><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small>
         </div>
     </footer>
     @else
     <footer class="footer">
         <div class="text-center text-muted">
-            <small><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small>
         </div>
     </footer>
     @endif
@@ -482,7 +476,7 @@
                     $(this).remove();
                 });
             }
-            
+
             if ($('#typed-strings').length) {
                 @if($about->taglines)
                     var typedStrings = new Typed('#typed-strings', {
@@ -555,7 +549,7 @@
                     });
                 }
             });
-            
+
             function showNotification(message = 'Something went wrong', type = 'error', sticky = false) {
                 iziToast.show({
                     title: '',
@@ -570,7 +564,7 @@
                     messageColor: type === 'success' ? '#00ffb8' : '#ffafb4',
                     icon: type === 'success' ? 'fas fa-check' : 'fas fa-times-circle'
                 });
-            }    
+            }
         });
     </script>
     @if (!empty($portfolioConfig['script']['footer']) && $portfolioConfig['script']['footer'] != '')
